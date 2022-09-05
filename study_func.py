@@ -53,7 +53,7 @@ def study_function(y, singp=0, asimp=True):
         if k > 0:
             for i in range(0, k):
                 ri = roots_2diff[i]
-        y3_0 = y3_.subs(x, ri)
-        y_0 = y_.subs(x, ri)
-        if (y3_0 != 0) & (y_0 != 0):
-            print('x = %s - точка перегиба, y(x) = %s' % (ri, y.subs(x, ri)))
+                y3_0 = y3_.subs(x, ri)
+                y_0 = y_.subs(x, ri)
+                if (y3_0 != 0) & (y_0 != 0):
+                    print('x = %s - точка перегиба, y(x) = %s' % (ri, y.subs(x, ri)))
